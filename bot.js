@@ -33,17 +33,19 @@ $(document).ready(function() {
              $("#puf").show();
                      flag=1;
                      display(' <a href="https://www.iiita.ac.in/uploads/carousel/campus818901.jpg"><img src="https://www.iiita.ac.in/uploads/carousel/campus818901.jpg" style="height:200px; width: 200px;"</a>&nbsp;&nbsp;<a href="https://www.iiita.ac.in/uploads/carousel/b218.jpg"><img src="https://www.iiita.ac.in/uploads/carousel/b218.jpg" style="height:200px; width: 200px;"</a>&nbsp;<a href="https://ece.iiita.ac.in/images/i1.jpg"><img src="https://ece.iiita.ac.in/images/i1.jpg" style="height:200px; width: 200px;"</a><br><a href="https://www.iiita.ac.in/institute/infrastructure/images/gridimage/infrastructure.jpg"><img src="https://www.iiita.ac.in/institute/infrastructure/images/gridimage/infrastructure.jpg" style="height:200px; width: 200px;"</a>&nbsp;<a href="https://img.collegepravesh.com/2015/11/IIIT-Allahabad-Logo.png"><img src="https://img.collegepravesh.com/2015/11/IIIT-Allahabad-Logo.png" style="height:200px; width: 200px;"</a>');
-                     window.scrollBy(0,1000);
+                     window.scrollBy(0,2000);
         });
         $("#aboutbtn").click(function(event) {
              $("#puf").show();
                      flag=1;
                      display('<div class="thumbnail" style="height:300px;width:200p;"><img src="https://mba.iiita.ac.in/img/2.jpg" style="height:280px;"></div><br><br><b>Indian Institute of Information Technology</b>, Allahabad (IIIT-Allahabad) is a public university located in Allahabad, in Uttar Pradesh state in northern India. It is one of the nineteen Indian Institutes of Information Technology listed by the Ministry of Human Resource Development. <br><br><ul><li><label>Established: </label> 1999 </li><li><label>Director: </label> P. Nagabhushan </li><li><label>Academic Staff: </label> 82 </li><li><label>Undergraduates: </label> 1080 </li><li><label>Postgraduates: </label> 475 </li></ul>');
+             window.scrollBy(0,2000);
         });
         $("#locationbtn").click(function(event) {
              $("#puf").show();
                      flag=1;
                      display('<div class="thumbnail" style="height:300px;width:200p;"><img src="https://www.google.co.in/maps/vt/data=ASQ9HwYGfOQySfJcAicKosMT_fE7NpSiyo0JsrcFFUli8ZSY73a9tluPSJAt-tM6ULwoU0l8zhDxNGXY59BSfwr_Dbz9wZNBbAdE3RTpKmsUGSaf1UwMDeyJG4mXOdeJ-DJQ-lcKOlYpSSpV" style="height:280px;"></div><br><br><ul><li><label>Address: </label> IIIT Rd, Near Boys Hostel, Devghat, Jhalwa, Allahabad, Uttar Pradesh 211015 </li><br><li><label>Campus: </label> Urban, 100-acre (40 ha) </li> </ul>');
+               window.scrollBy(0,2000);
         });
         $("#hostelbtn").click(function(event) {
              $("#puf").show();
@@ -58,6 +60,7 @@ $(document).ready(function() {
                        } else { 
                                   r.innerHTML = "Geolocation is not supported by this browser.";
                        }
+               
         });
 	$("#buttons1").click(function(event) {
 		$("#puf").show();
@@ -186,7 +189,7 @@ $(document).ready(function() {
                 if((res8k || res8l || res8m || res8n) && (res8a || res8b || res8c || res8d || res8e || res8f || res8g || res8h || res8i || res8j) && flag == 0) {
                      flag=1;
                      display(' <a href="https://www.iiita.ac.in/uploads/carousel/campus818901.jpg"><img src="https://www.iiita.ac.in/uploads/carousel/campus818901.jpg" style="height:200px; width: 200px;"></a>&nbsp;&nbsp;<a href="https://www.iiita.ac.in/uploads/carousel/b218.jpg"><img src="https://www.iiita.ac.in/uploads/carousel/b218.jpg" style="height:200px; width: 200px;"></a>&nbsp;<a href="https://ece.iiita.ac.in/images/i1.jpg"><img src="https://ece.iiita.ac.in/images/i1.jpg" style="height:200px; width: 200px;"></a><br><a href="https://www.iiita.ac.in/institute/infrastructure/images/gridimage/infrastructure.jpg"><img src="https://www.iiita.ac.in/institute/infrastructure/images/gridimage/infrastructure.jpg" style="height:200px; width: 200px;"></a>&nbsp;<a href="https://img.collegepravesh.com/2015/11/IIIT-Allahabad-Logo.png"><img src="https://img.collegepravesh.com/2015/11/IIIT-Allahabad-Logo.png" style="height:200px; width: 200px;"></a>');
-                     window.scrollBy(0,1000);
+                     window.scrollBy(0,2000);
                 }
                 
                 var res9a = val1.match(/about/g);
@@ -199,6 +202,7 @@ $(document).ready(function() {
                 {
                       flag=1;
                      display('<div class="thumbnail" style="height:300px;width:200p;"><img src="https://mba.iiita.ac.in/img/2.jpg" style="height:280px;"></div><br><br><b>Indian Institute of Information Technology</b>, Allahabad (IIIT-Allahabad) is a public university located in Allahabad, in Uttar Pradesh state in northern India. It is one of the nineteen Indian Institutes of Information Technology listed by the Ministry of Human Resource Development. <br><br><ul><li><label>Established: </label> 1999 </li><li><label>Director: </label> P. Nagabhushan </li><li><label>Academic Staff: </label> 82 </li><li><label>Undergraduates: </label> 1080 </li><li><label>Postgraduates: </label> 475 </li></ul>');
+                   window.scrollBy(0,3000);
                 }
 
                 var res10a = val1.match(/area/g);
@@ -211,6 +215,7 @@ $(document).ready(function() {
                 {
                       flag=1;
                      display('<div class="thumbnail" style="height:300px;width:200p;"><img src="https://www.google.co.in/maps/vt/data=ASQ9HwYGfOQySfJcAicKosMT_fE7NpSiyo0JsrcFFUli8ZSY73a9tluPSJAt-tM6ULwoU0l8zhDxNGXY59BSfwr_Dbz9wZNBbAdE3RTpKmsUGSaf1UwMDeyJG4mXOdeJ-DJQ-lcKOlYpSSpV" style="height:280px;"></div><br><br><ul><li><label>Address: </label> IIIT Rd, Near Boys Hostel, Devghat, Jhalwa, Allahabad, Uttar Pradesh 211015 </li><br><li><label>Campus: </label> Urban, 100-acre (40 ha) </li> </ul>');
+                       window.scrollBy(0,2000);
                 }
                  
                 var res11a = val1.match(/hostel/g);
@@ -220,26 +225,6 @@ $(document).ready(function() {
                       display('"We have 5 Boys Hostel and 3 Girls Hostel. Apart from that there are 3 Visitors Hostel. Search for "boys hostel", "girls hostel", "visitor hostel" for further info');
                       
                 }
-
-		var res7a =val1.match(/haan/g);
-		var res7b =val1.match(/han/g);
-		var res7c =val1.match(/hn/g);
-		var res7d =val1.match(/ha/g);
-                var res7e =val1.match(/acha/g);
-                var res7f =val1.match(/achha/g);
-                var res7g =val1.match(/achaa/g);
-		if((res7a || res7b || res7c || res7d || res7e || res7f || res7g) && flag == 0) {
-			flag = 1;
-			display('English pleej ?');
-		}
-		
-		var much = val1.match(/much/g);
-		var forr = val1.match(/for/g);
-		var night = val1.match(/night/g);
-		if(much && forr && night) {
-			flag = 1;
-			display(' Haha! You\'re funny! Anyway, It\'s free for you ;) ');
-		}
 
 		var lol = val1.match(/lol/g);
 			if(lol) {
@@ -362,7 +347,7 @@ $(document).ready(function() {
                                   r.innerHTML = "Geolocation is not supported by this browser.";
                        }
                        
-                        
+                        window.scrollBy(0,4000);
                 }
                 
 		if(flag == 0)
