@@ -50,6 +50,15 @@ $(document).ready(function() {
                      flag=1;
                      display('"We have 5 Boys Hostel and 3 Girls Hostel. Apart from that there are 3 Visitors Hostel. Search for "boys hostel", "girls hostel", "visitor hostel" for further info');
         });
+        $("#dirbtn").click(function(event) {
+             $("#puf").show();
+                     flag=1;
+                     if (navigator.geolocation) {
+                                  navigator.geolocation.getCurrentPosition(showPosition);
+                       } else { 
+                                  r.innerHTML = "Geolocation is not supported by this browser.";
+                       }
+        });
 	$("#buttons1").click(function(event) {
 		$("#puf").show();
 		var val1 = $("#msg1").val();
