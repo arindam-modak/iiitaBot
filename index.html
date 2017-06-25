@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AnythingBot</title>
+	  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+	  <style type="text/css">
+	  	.jumbotron {
+	  		width: 90%;
+	  	}
+	  	body {
+	  		background-color: grey;
+	  		font-family: 'Source Sans Pro', sans-serif;
+	  		letter-spacing: 1.2px;
+	  	}
+                #micro:hover {
+                      background-color: orange;
+                 }
+            .scrollable {
+             height: 550px; /* or any value */
+             overflow-y: auto;
+             }
+         
+	  </style>
+</head>
+<body>
+<div class="container">
+       <div>
+	<div class="form-group" style="margin-left: 10%;padding-left:30%;">
+		<form method="POST" id="form" style="position: fixed;">
+			<div class="row">
+				<div class="col-md-8 col-sm-12 col-xs-12">
+					<input type="text"  class="form-control" name="message" placeholder="Type a message..." id="msg">
+				</div>
+				<div class="col-md-2 col-sm-12 col-xs-12">
+					<button class="btn btn-default" id="buttons">Send</button><br>
+				</div>
+				<div class="col-md-2 col-sm-12 col-xs-12">
+					<i class="fa fa-microphone" id="micro" aria-hidden="true" onclick="startDictation()" style="color: white;margin-left: 35%;font-size: 20px;margin-top: 25%;"></i>
+				</div>
+			</div>
+		</form>
+		<form method="POST" id="form1" style="position: fixed;">
+			<div class="row">
+				<div class="col-md-8 col-sm-12 col-xs-12">
+					<input type="text"  class="form-control" name="message" placeholder="Type a message..." id="msg1">
+				</div>
+				<div class="col-md-2 col-sm-12 col-xs-12">
+					<button class="btn btn-default" id="buttons1">Send</button><br>
+				</div>
+				<div class="col-md-2 col-sm-12 col-xs-12">
+					<i class="fa fa-microphone" id="micro" aria-hidden="true" onclick="startDictation1()" style="color: white;margin-left: 35%;font-size: 20px;margin-top: 25%;"></i>
+				</div>
+			</div>
+		</form>
+	</div><br></div><br><br><br>
+	<div class="row">
+	<div class="col-md-3 col-sm-12 col-xs-12" style="margin-top: 2%;">
+            <h2><u>You Can search for example</u></h2><br>
+            <font color="white">
+            <ul type="None">
+                 <li><q>tell me how are you</q></li>
+                 <br>
+                 <li><q>who made you</q></li>
+                 <br>
+                 <li><q>tell me the date</q></li>
+                 <br>
+                 <li><q>tell me the weather of allahabad</q></li>
+                 <br>
+                 <li><q>tell me about the college</q></li>
+                 <br>
+                 <li><q>show me pictures of the college</q></li>
+                 <br>
+            </ul>
+            </font>
+        </div>
+	<div class="col-md-7 col-sm-12 col-xs-12 scrollable">
+	<div id="chat" style="overflow: auto;height: 90%;margin-top: 2%;">
+		 <ul style="list-style: none;" id="list">
+		 	<li>
+		 		<div class="jumbotron">
+		 			<h3>Wake up your bot by saying, <b>Hey</b>!</h3>
+		 		</div>
+		 	</li>
+		 </ul>
+		 <img src="svg-loaders/puff.svg" style="margin-left: 45%;" id="puf" />
+	</div>
+	</div>
+
+        <div class="col-md-2 col-sm-12 col-xs-12" style="margin-top: 2%;">
+            <ul type="None">
+                 <li><button class="btn btn-lg btn-primary" id="picbtn">Pictures</button></li>
+                 <br>
+                 <li><button class="btn btn-lg btn-warning" id="aboutbtn">About College</button></li>
+                 <br>
+                 <li><button class="btn btn-lg btn-primary" id="locationbtn">Location||Campus</button></li>
+                 <br>
+                 <li><button class="btn btn-lg btn-warning" id="hostelbtn">Hostel</button></li>
+            </ul>
+        </div>
+
+	</div>
+</div>
+
+
+<script type="text/javascript" src="bot.js"></script>
+<script type="text/javascript" src="voice.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
