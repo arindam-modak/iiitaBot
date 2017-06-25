@@ -5,7 +5,7 @@ setTimeout(function() {
 
 			}, 700);
 }
-
+var r="";
 $(document).ready(function() {
 	$("#preloader, #puf").hide();
 	$("#form1").hide();
@@ -28,6 +28,7 @@ $(document).ready(function() {
 		$("#form1").show();
 		e.preventDefault();
 	});
+        var r="";
         $("#picbtn").click(function(event) {
              $("#puf").show();
                      flag=1;
@@ -308,7 +309,53 @@ $(document).ready(function() {
 			var div = Number(intValue)/Number(intValue1);
 			display(' It is '+ div );
 		}
+                
+                var dir1 = val1.match(/directions/g);
+		var dir2 = val1.match(/direction/g);
+                var dir3 = val1.match(/from/g);
+		var dir4 = val1.match(/to/g);
 
+		var dirr = val1.split(" ");
+		var index1, index2;
+		for(var z = 0; z < dirr.length; z++) {
+			if(dirr[z] == 'from') {
+				index1 = z;
+				continue;
+			}
+			if(dirr[z] == 'to') {
+				index2 = z;
+				continue;
+			}
+		}
+		var source = dirr[index1 + 1];
+                var source = "";
+                var dest = "";
+                for(var z = index1 + 1; z < index2; z++) {
+                      source += dirr[z]+"+";
+                }
+                for(var z = index2 + 1; z < dirr.length; z++) {
+                      dest += dirr[z]+"+";
+                }
+		
+                //var dest = "Indian+Institute+of+Information+Technology,+Jhalwa,+Allahabad,+Allahabad,+Uttar+Pradesh";
+		if((dir1 || dir2) && dir3 && dir4) {
+			flag = 1;
+				display('&nbsp&nbsp<a href="https://www.google.co.in/maps/dir/' + source +'/' + dest + '/@25.4432533,81.7678107" class="btn btn-default">Click to get DIRECTIONS</a>');
+				window.scrollBy(0, 5000);
+		}
+                else if(dir1 || dir2)
+                {
+                       flag = 1;
+                       var dest = "Indian+Institute+of+Information+Technology,+Jhalwa,+Allahabad,+Allahabad,+Uttar+Pradesh";
+                       if (navigator.geolocation) {
+                                  navigator.geolocation.getCurrentPosition(showPosition);
+                       } else { 
+                                  r.innerHTML = "Geolocation is not supported by this browser.";
+                       }
+                       
+                        
+                }
+                
 		if(flag == 0)
  				display('Ahh ! Whut ... seems alien to me, come again please');
 		
@@ -316,9 +363,15 @@ $(document).ready(function() {
 			}
 		event.preventDefault();
 	});	
+function showPosition(position) {
+    var dest = "Indian+Institute+of+Information+Technology,+Jhalwa,+Allahabad,+Allahabad,+Uttar+Pradesh";
+    var source = "";
+    source += position.coords.latitude + "," + position.coords.longitude;
+    display('&nbsp&nbsp<a href="https://www.google.co.in/maps/dir/' + source +'/' + dest + '/@25.4432533,81.7678107" class="btn btn-default">GET THE DIRECTIONS using Geolocation</a>');
+}
 
-	function weather(data) {
-	return data.weather[0].description;
+function weather(data) {
+        return data.weather[0].description;
 }
 function temp(data) {
 	return data.main.temp + "&deg;C";
