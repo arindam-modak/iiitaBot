@@ -62,6 +62,11 @@ $(document).ready(function() {
                        }
                
         });
+        $("#gamebtn").click(function(event) {
+             $("#puf").show();
+                     flag=1;
+                     display('Right now we have the following games: <br><ul><li><a href = "https://ravicharann.github.io/BlockBreaker-js/" class="btn btn-default">Atari Breakout</a>&nbsp;&nbsp;</li><li><a href = "https://codhek.github.io/ColorGame/" class="btn btn-default">Da Vinci Color</a>&nbsp;&nbsp;</li><li><a href = "https://arindam-modak.github.io/Flappy-bird-game/" class="btn btn-default">Flappy Bird</a>&nbsp;&nbsp;</li><li><a href = "http://anupamdagar.me/javascript-game/" class="btn btn-default">Egg and Bucket</a></li></ul>');
+        });
 	$("#buttons1").click(function(event) {
 		$("#puf").show();
 		var val1 = $("#msg1").val();
