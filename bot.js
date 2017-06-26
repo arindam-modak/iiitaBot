@@ -2,7 +2,7 @@ function display(message){
 setTimeout(function() {
 				$("#puf").hide();
 				$("#list").append('<li> <div class="jumbotron"><h3><b> IIITaBot: </b>' + message + '</h3></div></li>').fadeIn(2000);
-
+                                responsiveVoice.speak(message);
 			}, 700);
 }
 var r="";
