@@ -349,6 +349,15 @@ $(document).ready(function() {
                        
                         window.scrollBy(0,4000);
                 }
+
+                var gam1 = val1.match(/game/g);
+                var gam2 = val1.match(/games/g);
+                var gam3 = val1.match(/play/g);
+                if(gam3 && (gam1 || gam2) && flag==0) {
+                     flag=1;
+                     display('Right now we have the following games: <br><ul><li><a href = "https://ravicharann.github.io/BlockBreaker-js/" class="btn btn-default">Atari Breakout</a>&nbsp;&nbsp;</li><li><a href = "https://codhek.github.io/ColorGame/" class="btn btn-default">Da Vinci Color</a>&nbsp;&nbsp;</li><li><a href = "https://arindam-modak.github.io/Flappy-bird-game/" class="btn btn-default">Flappy Bird</a>&nbsp;&nbsp;</li><li><a href = "http://anupamdagar.me/javascript-game/" class="btn btn-default">Egg and Bucket</a></li></ul>');
+                }
+
                 
 		if(flag == 0)
  				display('Ahh ! Whut ... seems alien to me, come again please');
